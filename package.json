@@ -4,11 +4,21 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
-    "express": "^4.18.2",
+    "express": "^4.19.2",
     "express-promise-router": "^4.1.1",
     "http-status": "^1.6.2",
     "jsonwebtoken": "^9.0.1",
     "pg": "^8.11.1"
   },
-  "type": "module"
+  "type": "module",
+  "name": "to-do-main",
+  "version": "1.0.0",
+  "description": "This is a university project. I have used html,css,js for frontend and express node js for backend and postgresql for database. I have used supabase to store the data. Also followed every required instructions and features given for the project.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
 }
