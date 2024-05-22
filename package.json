@@ -4,6 +4,7 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-promise-router": "^4.1.1",
     "http-status": "^1.6.2",
@@ -15,6 +16,9 @@
   "version": "1.0.0",
   "description": "This is a university project. I have used html,css,js for frontend and express node js for backend and postgresql for database. I have used supabase to store the data. Also followed every required instructions and features given for the project.",
   "main": "main.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
