@@ -2,7 +2,7 @@ import pg from "pg";
 import dotenv from 'dotenv';
 
 dotenv.config();
-console.log("MONGO_STRING:", process.env.MONGO_STRING);
+// console.log("MONGO_STRING:", process.env.MONGO_STRING);
 
 export const dbClient = new pg.Client({
   connectionString: process.env.MONGO_STRING,
