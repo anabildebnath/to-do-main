@@ -1,4 +1,6 @@
-const baseUrl = "http://localhost:3000";
+const baseUrl = "https://anabil-todolist.netlify.app/";
+
+
 const createCheckbox = (todoDataItem, todoElementRef) => {
   const checkBox = document.createElement("input");
   checkBox.type = "checkbox";

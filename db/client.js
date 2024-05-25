@@ -1,11 +1,17 @@
 import pg from "pg";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+export default supabase;
 
 dotenv.config();
-// console.log("MONGO_STRING:", process.env.MONGO_STRING);
 
 export const dbClient = new pg.Client({
-  connectionString: process.env.MONGO_STRING,
+  connectionString: process.env.SUPABASE_STRING,
 });
 
 // console.log("hi");
@@ -21,13 +27,13 @@ export const dbClient = new pg.Client({
     console.log("Connected to the database successfully.");
 
     // Perform a query
-    const result = await dbClient.query('SELECT * FROM users');
+    const result = await dbClient.query("SELECT * FROM users");
 
     // Log the results
-    console.log('~~~ results:', result.rows);
+    console.log("~~~ results:", result.rows);
   } catch (err) {
     // Handle any errors
-    console.error('Error connecting to the database or executing query', err);
+    console.error("Error connecting to the database or executing query", err);
   } finally {
     // Ensure the client will close when you finish/error
     // await dbClient.end();
