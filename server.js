@@ -1,4 +1,3 @@
-// ./app.js
 import express from "express";
 import mountRoutes from "./routes/index.js";
 import bodyParser from "body-parser";
@@ -11,12 +10,12 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(cors());
+
 // parse application/json
 app.use(bodyParser.json());
 
 mountRoutes(app);
-
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function (err) {
   if (err) console.log("Error in server setup");

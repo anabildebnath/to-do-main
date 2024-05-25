@@ -1,6 +1,7 @@
 import pg from "pg";
 import dotenv from "dotenv";
 import { createClient } from "@supabase/supabase-js";
+dotenv.config();
 
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY;
@@ -8,7 +9,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default supabase;
 
-dotenv.config();
+
 
 export const dbClient = new pg.Client({
   connectionString: process.env.SUPABASE_STRING,
