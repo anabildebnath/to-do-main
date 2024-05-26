@@ -1,38 +1,28 @@
 {
-  "name": "to-do-list",
-  "version": "0.1.0",
-  "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.0"
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-promise-router": "^4.1.1",
+    "http-status": "^1.6.2",
+    "jsonwebtoken": "^9.0.1",
+    "pg": "^8.11.1"
+  },
+  "type": "module",
+  "name": "to-do-main",
+  "version": "1.0.0",
+  "description": "This is a university project. I have used html,css,js for frontend and express node js for backend and postgresql for database. I have used supabase to store the data. Also followed every required instructions and features given for the project.",
+  "main": "main.js",
+  "engines": {
+    "node": "20.x"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "author": "",
+  "license": "ISC"
 }
