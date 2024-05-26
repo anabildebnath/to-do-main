@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
+    <div id="popup" class="popup">
+      Server deployed on Render.com might take some time to accept request and
+      return response.
+    </div>
     <!-- navbar -->
     <nav class="nav">
       <div class="brand">
@@ -49,51 +53,65 @@
       <div class="navChild">
         <ul>
           <li>
+            <a href="/"> Home </a>
+          </li>
+          <li>
+            <a href="https://github.com/anabildebnath"> Github </a>
+          </li>
+          <li>
             <a> Features </a>
           </li>
           <li>
-            <a> Github </a>
+            <a href="https://anabildebnath.netlify.app/"> About Developer</a>
           </li>
           <li>
-            <a> About </a>
-          </li>
-          <li>
-            <a href="./authentication.html"> Login </a>
-          </li>
-          <li>
-            <a> Signup for free </a>
+            <a>Demo Video</a>
           </li>
           <Account />
         </ul>
       </div>
     </nav>
     <div class="container">
-        <!-- logo  -->
-        <img src="./images/" alt="">
+      <!-- logo  -->
+      <svg
+        viewBox="0 0 88 88"
+        xmlns="http://www.w3.org/2000/svg"
+        class="logo_1OKcB"
+      >
+        <g fill="none" fill-rule="evenodd">
+          <rect></rect>
+          <path
+            d="M30.755 33.292l-7.34 8.935L40.798 56.48a5.782 5.782 0 008.182-.854l31.179-38.93-9.026-7.228L43.614 43.83l-12.86-10.538z"
+            fill="#FFB000"
+          ></path>
+          <path
+            d="M44 78.1C25.197 78.1 9.9 62.803 9.9 44S25.197 9.9 44 9.9V0C19.738 0 0 19.738 0 44s19.738 44 44 44 44-19.738 44-44h-9.9c0 18.803-15.297 34.1-34.1 34.1"
+            fill="#4772FA"
+          ></path>
+        </g>
+      </svg>
       <!-- login  -->
       <div class="login-box" style="display: none">
-        <div class="login-header">LOG-IN</div>
-
+        <div class="header">LOG-IN</div>
         <div class="login-email-box">
           <i class="login__icon fas fa-user"></i>
-          <div class="login-email-label">Email</div>
-          <input name="email" class="login-email-input" />
+          <input name="email" class="login-email-input" placeholder="Email"/>
         </div>
 
         <div class="login-password-box">
           <i class="login__icon fas fa-lock"></i>
-          <div class="login-password-label">Password</div>
-          <input name="password" class="login-password-input" type="password" />
+          <input name="password" class="login-password-input" type="password" placeholder="Password" />
         </div>
         <div class="incorrect-password-error">Incorrect email or password</div>
 
-        <div class="login-submit-box" style="display: flex; gap: 20px">
-          <button class="login-submit-button">Login</button>
-          <button class="goto-sign-up">Sign up?</button>
+        <div class="login-submit-box">
+          <button class="btn login-submit-button">Login</button>
+          <button class="btn goto-sign-up">Sign up?</button>
         </div>
       </div>
       <!-- signup  -->
       <div class="signup-box" style="display: none">
+        <div class="header">Sign Up</div>
         <div class="signup-name-box">
           <div class="signup-name-label">Name</div>
           <input class="signup-name-input" />
@@ -111,7 +129,8 @@
           <input class="signup-confirm-password-input" type="password" />
         </div>
         <div class="signup-submit-box">
-          <button class="signup-submit-button">Signup</button>
+          <button class="btn signup-submit-button">Signup</button>
+          <button class="btn goto-login">Get back to Login</button>
         </div>
       </div>
 

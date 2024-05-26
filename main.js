@@ -187,6 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const signUpBox = document.querySelector(".signup-box");
       signUpBox.style.display = "block";
     });
+
   }
 
   // login
@@ -283,4 +284,17 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.removeItem("id");
     window.location.reload();
   });
+});
+
+//popup
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("popup");
+
+  // Show the popup
+  popup.style.display = "block";
+
+  // Hide the popup after 7 seconds (7000 milliseconds)
+  setTimeout(function () {
+    popup.style.display = "none";
+  }, 7000);
 });

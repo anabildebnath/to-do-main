@@ -23,6 +23,7 @@ body {
     "Helvetica Neue", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 }
 
+
 /* nabar styling */
 .nav {
   display: flex;
@@ -102,7 +103,9 @@ a {
   gap: 5rem;
   height: 100vh;
 }
-.homeDescription h2,.features h2, .lastFeature h1 {
+.homeDescription h2,
+.features h2,
+.lastFeature h1 {
   line-height: 1.4;
   font-size: 60px;
   color: black;
@@ -113,9 +116,11 @@ a {
   margin-block-end: 0.13em;
 }
 .features h2 {
-    font-size: 30px;
+  font-size: 30px;
 }
-.homeDescription p,.features p, .lastFeature p {
+.homeDescription p,
+.features p,
+.lastFeature p {
   font-family: "Segoe UI", "Avenir Next", "Hiragino Sans GB", "PingFang SC",
     "Helvetica Neue", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
   display: block;
@@ -153,12 +158,6 @@ a {
   width: 35vw;
 }
 
-.todo-box {
-  /* background-color: red; */
-}
-
-li {
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -167,7 +166,6 @@ li {
 }
 
 body {
-  /* background-color: red; */
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -199,32 +197,31 @@ li {
   width: 400px;
 }
 
-.features{
-    width: 100%;
+.features {
+  width: 100%;
 }
-.feature{
-    display: flex;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    align-items: center;
-    gap: 0;
-
+.feature {
+  display: flex;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  align-items: center;
+  gap: 0;
 }
-.features > :nth-child(2n){
-    background-color: #fafafa;
+.features > :nth-child(2n) {
+  background-color: #fafafa;
 }
-.features img,.lastFeature img{
-    width: 80%;
- 
+.features img,
+.lastFeature img {
+  width: 80%;
 }
-.lastFeature{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
+.lastFeature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
 }
-.lastFeature .homeButtons{
-    margin-top: 5rem;
+.lastFeature .homeButtons {
+  margin-top: 5rem;
 }
