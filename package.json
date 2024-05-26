@@ -15,7 +15,7 @@
   "type": "module",
   "name": "to-do-main",
   "version": "1.0.0",
-  "description": "This is a university project. I have used html,css,js for frontend and express node js for backend and postgresql for database. I have used supabase to store the data. Also followed every required instructions and features given for the project.",
+  "description": "This is my university project. I have used html,css,js for frontend and express node js for backend and postgresql for database. I have used supabase to store the database, render to deploy the server and netlify to deploy the frontend . Also followed every required instructions and features given for the project.",
   "main": "main.js",
   "engines": {
     "node": "20.x"
@@ -24,6 +24,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Anabil Debnath",
   "license": "ISC"
 }
