@@ -13,65 +13,216 @@
       href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css"
     />
     <script src="./main.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
+
   <body>
+    <nav class="nav">
+      <div class="brand">
+        <ul>
+          <li>
+            <a href="/">
+              <svg
+                viewBox="0 0 88 88"
+                xmlns="http://www.w3.org/2000/svg"
+                class="logo_1OKcB"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <rect></rect>
+                  <path
+                    d="M30.755 33.292l-7.34 8.935L40.798 56.48a5.782 5.782 0 008.182-.854l31.179-38.93-9.026-7.228L43.614 43.83l-12.86-10.538z"
+                    fill="#FFB000"
+                  ></path>
+                  <path
+                    d="M44 78.1C25.197 78.1 9.9 62.803 9.9 44S25.197 9.9 44 9.9V0C19.738 0 0 19.738 0 44s19.738 44 44 44 44-19.738 44-44h-9.9c0 18.803-15.297 34.1-34.1 34.1"
+                    fill="#4772FA"
+                  ></path>
+                </g>
+              </svg>
+
+              <h1>TO DO</h1>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navChild">
+        <ul>
+          <li>
+            <a> Features </a>
+          </li>
+          <li>
+            <a> Github </a>
+          </li>
+          <li>
+            <a> About </a>
+          </li>
+          <li>
+            <a href="https://anabildebnath.netlify.app/"> About Developer</a>
+          </li>
+          <li>
+            <a href="https://github.com/anabildebnath">Github</a>
+          </li>
+          <Account />
+        </ul>
+      </div>
+    </nav>
+
     <div class="app">
-      <div class="login-box" style="display: none">
-        <div class="login-header">LOG-IN</div>
-
-        <div class="login-email-box">
-          <i class="login__icon fas fa-user"></i>
-          <div class="login-email-label">Email</div>
-          <input name="email" class="login-email-input" />
+      <div class="homepage">
+        <div class="homeDescription">
+          <h2>Stay Organized</h2>
+          <h2>Stay Creative</h2>
+          <p>
+            Join to capture ideas, organize life, and do something creative
+            everyday.
+          </p>
+          <div class="homeButtons">
+            <a href="./authentication.html" type="button" >New user? Signup</a>
+            <a href="./authentication.html" type="button" >Login</a>
+          </div>
         </div>
-
-        <div class="login-password-box">
-          <i class="login__icon fas fa-lock"></i>
-          <div class="login-password-label">Password</div>
-          <input name="password" class="login-password-input" type="password" />
-        </div>
-        <div class="incorrect-password-error">Incorrect email or password</div>
-
-        <div class="login-submit-box" style="display: flex; gap: 20px">
-          <button class="login-submit-button">Login</button>
-          <button class="goto-sign-up">Sign up?</button>
+        <div class="homeImage">
+          <img src="images/todo.png" alt="" />
         </div>
       </div>
 
-      <div class="signup-box" style="display: none">
-        <div class="signup-name-box">
-          <div class="signup-name-label">Name</div>
-          <input class="signup-name-input" />
+      <div class="features">
+        <div class="feature">
+          <div class="featureImage">
+            <img src="./images/feature-1.png" alt="" srcset="" />
+          </div>
+          <div class="featureTitle">
+            <h2>Organize everything in life</h2>
+            <p>
+              Whether there is a work-related task or a personal goal, TickTick
+              is here to help you manage all your to-dos.
+            </p>
+          </div>
         </div>
-        <div class="signup-email-box">
-          <div class="signup-email-label">Email</div>
-          <input class="signup-email-input" />
+        <div class="feature">
+          <div class="featureTitle">
+            <h2>Get reminded anytime, anywhere</h2>
+            <p>
+              Set a reminder to ease your mind off worrying about missing
+              deadlines from now on.
+            </p>
+          </div>
+          <div class="featureImage">
+            <img src="./images/feature-2.png" alt="" srcset="" />
+          </div>
         </div>
-        <div class="signup-password-box">
-          <div class="signup-password-label">Password</div>
-          <input class="signup-password-input" type="password" />
+        <div class="feature">
+          <div class="featureImage">
+            <img src="./images/feature-3.png" alt="" srcset="" />
+          </div>
+          <div class="featureTitle">
+            <h2>Flexible calendar views</h2>
+            <p>
+              With five different calendar views, you can check and handle your
+              schedules in a more convenient way.
+            </p>
+          </div>
         </div>
-        <div class="signup-confirm-password-box">
-          <div class="signup-confirm-password-label">Confirm Password</div>
-          <input class="signup-confirm-password-input" type="password" />
+        <div class="feature">
+          <div class="featureTitle">
+            <h2>Collaborating with others</h2>
+            <p>
+              From family weekend plan to teamwork, share lists and assign tasks
+              on the go. Stay productive together!
+            </p>
+          </div>
+          <div class="featureImage">
+            <img src="./images/feature-4.png" alt="" srcset="" />
+          </div>
         </div>
-        <div class="signup-submit-box">
-          <button class="signup-submit-button">Signup</button>
+      </div>
+      <div class="lastFeature">
+        <h1>Sync across multiple platforms</h1>
+        <p>
+          30+ features work seamlessly across 10+ platforms. Getting things done
+          has never been this easy.
+        </p>
+        <img src="./images/feature-5.png" alt="" />
+        <div class="homeButtons">
+          <a
+            href="https://anabildebnath.netlify.app/"
+            type="button"
+            target="_blank"
+            >About Developer</a
+          >
+          <a
+            href="https://github.com/anabildebnath"
+            type="button"
+            target="_blank"
+            >Github</a
+          >
         </div>
       </div>
 
-      <div class="todo-box" style="display: none">
-        <div class="todo-header">
-          <div class="todo-name-box">Todo List</div>
-          <button class="todo-logout-button">Logout</button>
+      <!-- <div class="auth">
+        <div class="login-box" style="display: none">
+          <div class="login-header">LOG-IN</div>
+
+          <div class="login-email-box">
+            <i class="login__icon fas fa-user"></i>
+            <div class="login-email-label">Email</div>
+            <input name="email" class="login-email-input" />
+          </div>
+
+          <div class="login-password-box">
+            <i class="login__icon fas fa-lock"></i>
+            <div class="login-password-label">Password</div>
+            <input
+              name="password"
+              class="login-password-input"
+              type="password"
+            />
+          </div>
+          <div class="incorrect-password-error">
+            Incorrect email or password
+          </div>
+
+          <div class="login-submit-box" style="display: flex; gap: 20px">
+            <button class="login-submit-button">Login</button>
+            <button class="goto-sign-up">Sign up?</button>
+          </div>
         </div>
-        <ul class="todo-list"></ul>
-        <div class="todo-footer">
-          <input class="add-item-input" />
-          <button class="add-item-button">Add Item</button>
+
+        <div class="signup-box" style="display: none">
+          <div class="signup-name-box">
+            <div class="signup-name-label">Name</div>
+            <input class="signup-name-input" />
+          </div>
+          <div class="signup-email-box">
+            <div class="signup-email-label">Email</div>
+            <input class="signup-email-input" />
+          </div>
+          <div class="signup-password-box">
+            <div class="signup-password-label">Password</div>
+            <input class="signup-password-input" type="password" />
+          </div>
+          <div class="signup-confirm-password-box">
+            <div class="signup-confirm-password-label">Confirm Password</div>
+            <input class="signup-confirm-password-input" type="password" />
+          </div>
+          <div class="signup-submit-box">
+            <button class="signup-submit-button">Signup</button>
+          </div>
         </div>
-      </div>
+
+        <div class="todo-box" style="display: none">
+          <div class="todo-header">
+            <div class="todo-name-box">Todo List</div>
+            <button class="todo-logout-button">Logout</button>
+          </div>
+          <ul class="todo-list"></ul>
+          <div class="todo-footer">
+            <input class="add-item-input" />
+            <button class="add-item-button">Add Item</button>
+          </div>
+        </div>
+      </div> -->
     </div>
   </body>
 </html>

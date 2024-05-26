@@ -1,0 +1,230 @@
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:400,700"); */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #90f09e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #58a063;
+}
+body {
+  font-family: "Segoe UI", "Avenir Next", "Hiragino Sans GB", "PingFang SC",
+    "Helvetica Neue", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+}
+
+/* nabar styling */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 7vh;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+  border-bottom: 1px solid #e5e5e5;
+  padding-right: 18rem;
+  padding-left: 18rem;
+}
+.nav li {
+  list-style: none;
+  border: none;
+}
+.nav h1,
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+.brand {
+  width: 60%;
+}
+.brand a {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+.brand svg {
+  width: 40px;
+  height: 40px;
+}
+.brand h1 {
+  font-size: 2rem;
+  line-height: 19px;
+  font-weight: 500;
+  color: rgb(48, 48, 48);
+}
+.navChild {
+  width: 40%;
+}
+.navChild ul {
+  display: flex;
+  width: 100%;
+}
+.navChild a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+  color: rgb(83, 81, 81);
+  white-space: nowrap;
+}
+.navChild a:hover {
+  border-bottom: 1px solid #5c5696;
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  .nav .brand h3 {
+    display: none;
+  }
+}
+
+/* home page styling */
+.homepage {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  height: 100vh;
+}
+.homeDescription h2,.features h2, .lastFeature h1 {
+  line-height: 1.4;
+  font-size: 60px;
+  color: black;
+  display: block;
+  font-family: "Segoe UI", "Avenir Next", "Hiragino Sans GB", "PingFang SC",
+    "Helvetica Neue", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+  font-weight: 500;
+  margin-block-end: 0.13em;
+}
+.features h2 {
+    font-size: 30px;
+}
+.homeDescription p,.features p, .lastFeature p {
+  font-family: "Segoe UI", "Avenir Next", "Hiragino Sans GB", "PingFang SC",
+    "Helvetica Neue", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.homeButtons a {
+  background-color: #6c8efb;
+  margin-right: 24px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: #fff;
+  min-width: 196px;
+  font-size: 20px;
+  line-height: 2.6em;
+  height: 2.6em;
+  border-radius: 6px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  text-decoration: none;
+}
+.homeButtons a:hover {
+  background-color: #486de9;
+}
+.homeImage img {
+  width: 35vw;
+}
+
+.todo-box {
+  /* background-color: red; */
+}
+
+li {
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+}
+
+body {
+  /* background-color: red; */
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background: linear-gradient(90deg, #c7c5f4, #a39bdd);
+  background-color: #f8f9fa;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+  position: relative;
+  box-shadow: 0px 0px 24px #5c5696;
+  z-index: 1;
+  height: 100%;
+}
+
+li {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  list-style: none;
+  width: 400px;
+}
+
+.features{
+    width: 100%;
+}
+.feature{
+    display: flex;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    align-items: center;
+    gap: 0;
+
+}
+.features > :nth-child(2n){
+    background-color: #fafafa;
+}
+.features img,.lastFeature img{
+    width: 80%;
+ 
+}
+.lastFeature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+.lastFeature .homeButtons{
+    margin-top: 5rem;
+}
