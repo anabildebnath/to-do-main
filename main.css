@@ -119,6 +119,9 @@ a {
   margin-top: 14vh;
   gap: 2rem;
 }
+.container i{
+  color: rgba(0, 0, 0, .85);
+}
 .container svg {
   width: 70px;
   height: 70px;
