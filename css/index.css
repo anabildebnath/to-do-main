@@ -1,28 +1,31 @@
 /* @import url("https://fonts.googleapis.com/css?family=Raleway:400,700"); */
-/* width */
+/* browser's scrollbar width */
 ::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Track */
+/*browser's scrollbar Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #90f09e;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #58a063;
-}
 body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background: linear-gradient(90deg, #c7c5f4, #a39bdd);
+  background-color: #f8f9fa;
+  overflow-x: hidden;
   font-family: "Segoe UI", "Avenir Next", "Hiragino Sans GB", "PingFang SC",
     "Helvetica Neue", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 }
-
+li {
+  list-style: none;
+}
 
 /* nabar styling */
 .nav {
@@ -43,8 +46,8 @@ body {
   padding-left: 18rem;
 }
 .nav li {
-  list-style: none;
-  border: none;
+  margin-top: 10px;
+  padding: 10px 20px;
 }
 .nav h1,
 a {
@@ -165,17 +168,6 @@ a {
   font-family: Raleway, sans-serif;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background: linear-gradient(90deg, #c7c5f4, #a39bdd);
-  background-color: #f8f9fa;
-}
 .app {
   display: flex;
   flex-direction: column;
@@ -187,14 +179,6 @@ body {
   box-shadow: 0px 0px 24px #5c5696;
   z-index: 1;
   height: 100%;
-}
-
-li {
-  margin-top: 10px;
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  list-style: none;
-  width: 400px;
 }
 
 .features {
@@ -221,7 +205,65 @@ li {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
+  border-bottom: .1px solid rgb(238, 234, 234);
 }
 .lastFeature .homeButtons {
   margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+
+/* footer  */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 18rem;
+  padding-left: 18rem;
+  margin-top: 9rem;
+  border-bottom: .1px solid rgb(238, 234, 234);
+}
+.footerDiv{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .1px solid rgb(238, 234, 234);
+  height: 30vh;
+
+}
+.element {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.element h5 {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.element li{
+  line-height: 20px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.element a{
+  cursor: pointer;
+  color: rgba(0, 0, 0, .64);
+}
+.element a:hover{
+    text-decoration: underline;
+}
+.socialLinks{
+  display: flex;
+  gap: 1.4rem;
+}
+.socialLinks img {
+  width: 2rem;
+ 
+
+}
+.footerDivLast{
+  margin-top: 2rem;
+  height: 20vh;
+  color: rgba(0, 0, 0, .64);
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
     <title>Todo List</title>
     <link
       rel="stylesheet"
@@ -14,7 +14,7 @@
       href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css"
     />
     <script src="./main.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
@@ -161,69 +161,94 @@
         </div>
       </div>
 
-      <!-- <div class="auth">
-        <div class="login-box" style="display: none">
-          <div class="login-header">LOG-IN</div>
+      <div class="footer">
+        <div class="footerDiv">
+          <div class="element">
+            <h5>Pojects</h5>
+            <ul>
+              <li><a href="https://swequizer.netlify.app/login" target="_blank">SweQuzier</a></li>
+              <li><a href="https://project350-rust.vercel.app/" target="_blank">Book Distribution System</a></li>
+              <li><a href="https://github.com/anabildebnath/TicketFlutterApp" target="_blank">Ticket Booking Application</a></li>
+              <li><a href="https://anabildebnath.netlify.app/" target="_blank">Portfolio</a></li>
+              <li><a href="https://github.com/anabildebnath/Sust-Cultural-Event-WebApp" target="_blank">Sust Cultural Platform</a></li>
+            </ul>
+          </div>
+          <div class="element">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/anabildebnath/" target="_blank">Help Center</a></li>
+              <li><a href="https://www.linkedin.com/in/anabildebnath/" target="_blank">FAQ</a></li>
+              <li><a href="https://www.linkedin.com/in/anabildebnath/" target="_blank">Bugs</a></li>
+            </ul>
+          </div>
+          <div class="element">
+            <h5>Resources</h5>
+            <ul>
+              <li><a href="https://github.com/anabildebnath/to-do-main" target="_blank">Repository</a></li>
+              <li><a href="https://copper-winny-13.tiiny.site" target="_blank">Refer to Friends & Colleagues</a></li>
+              <li><a href="" target="_blank">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="element">
+            <h5>About</h5>
+            <ul>
+              <li><a href="https://copper-winny-13.tiiny.site" target="_blank">About Me</a></li>
+              <li><a href="https://anabildebnath.netlify.app/" target="_blank">Portfolio</a></li>
+              <li><a href="https://github.com/anabildebnath/to-do-main" target="_blank">Github</a></li>
+            </ul>
+          </div>
+          <div class="element">
+            <h5>Legal</h5>
 
-          <div class="login-email-box">
-            <i class="login__icon fas fa-user"></i>
-            <div class="login-email-label">Email</div>
-            <input name="email" class="login-email-input" />
+            <ul>
+              <li><a href="https://www.dataguidance.com/notes/bangladesh-data-protection-overview" target="_blank" target="_blank">Terms</a></li>
+              <li><a href="http://bdlaws.minlaw.gov.bd/act-1261.html" target="_blank">Privacy</a></li>
+              <li><a href="https://www.fortinet.com/resources/cyberglossary/data-security#:~:text=Data%20security%20is%20the%20process,and%20organizations'%20policies%20and%20procedures." target="_blank">Security</a></li>
+            </ul>
           </div>
 
-          <div class="login-password-box">
-            <i class="login__icon fas fa-lock"></i>
-            <div class="login-password-label">Password</div>
-            <input
-              name="password"
-              class="login-password-input"
-              type="password"
-            />
-          </div>
-          <div class="incorrect-password-error">
-            Incorrect email or password
-          </div>
-
-          <div class="login-submit-box" style="display: flex; gap: 20px">
-            <button class="login-submit-button">Login</button>
-            <button class="goto-sign-up">Sign up?</button>
+          <div class="element social">
+            <h5>Contact me on</h5>
+            <div class="socialLinks">
+              <a
+                href="https://www.linkedin.com/in/anabildebnath/"
+                target="_blank"
+              >
+                <img src="./images/linked.png" alt=""
+              /></a>
+              <a
+                href="https://www.facebook.com/anabildebnathabir/"
+                target="_blank"
+              >
+                <img src="./images/fb.png" alt=""
+              /></a>
+              <a
+                href="https://www.instagram.com/anabildebnathabir/"
+                target="_blank"
+              >
+                <img src="./images/insta.png" alt=""
+              /></a>
+              <a href="https://x.com/AnabilDebnath" target="_blank">
+                <img src="./images/x.png" alt=""
+              /></a>
+              <a href="https://github.com/anabildebnath" target="_blank">
+                <img src="./images/git.png" alt=""
+              /></a>
+              <a
+                href="https://www.youtube.com/channel/UCJDCqEmsfJKBKfu4ali-8Kg"
+                target="_blank"
+                ><img src="./images/youtube.png" alt=""
+              /></a>
+              <a href="https://anabildebnath.netlify.app/" target="_blank">
+                <img src="./images/log.png" alt=""
+              /></a>
+            </div>
           </div>
         </div>
-
-        <div class="signup-box" style="display: none">
-          <div class="signup-name-box">
-            <div class="signup-name-label">Name</div>
-            <input class="signup-name-input" />
-          </div>
-          <div class="signup-email-box">
-            <div class="signup-email-label">Email</div>
-            <input class="signup-email-input" />
-          </div>
-          <div class="signup-password-box">
-            <div class="signup-password-label">Password</div>
-            <input class="signup-password-input" type="password" />
-          </div>
-          <div class="signup-confirm-password-box">
-            <div class="signup-confirm-password-label">Confirm Password</div>
-            <input class="signup-confirm-password-input" type="password" />
-          </div>
-          <div class="signup-submit-box">
-            <button class="signup-submit-button">Signup</button>
-          </div>
+        <div class="footerDivLast">
+          <p>© 2024 Anabil Debnath Abir</p>
         </div>
-
-        <div class="todo-box" style="display: none">
-          <div class="todo-header">
-            <div class="todo-name-box">Todo List</div>
-            <button class="todo-logout-button">Logout</button>
-          </div>
-          <ul class="todo-list"></ul>
-          <div class="todo-footer">
-            <input class="add-item-input" />
-            <button class="add-item-button">Add Item</button>
-          </div>
-        </div>
-      </div> -->
+      </div>
     </div>
   </body>
 </html>
