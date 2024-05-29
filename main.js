@@ -1,4 +1,7 @@
+//live server deployment url on render
 const baseUrl = "https://to-do-main.onrender.com";
+
+// creating new checkbox for new to do list
 const createCheckbox = (todoDataItem, todoElementRef) => {
   const checkBox = document.createElement("input");
   checkBox.type = "checkbox";
@@ -28,6 +31,7 @@ const createCheckbox = (todoDataItem, todoElementRef) => {
   return checkBox;
 };
 
+// creating delete button for deleting a particular list
 const createDeleteButton = (todoDataItem, todoElementRef) => {
   const deleteButton = document.createElement("button");
   deleteButton.innerHTML = "X";
@@ -55,6 +59,7 @@ const createDeleteButton = (todoDataItem, todoElementRef) => {
   return deleteButton;
 };
 
+//creating edit button for editing a particular list
 const createEditButton = (todoDataItem, todoElementRef) => {
   const editButton = document.createElement("button");
   editButton.innerHTML = "Edit";
@@ -180,17 +185,26 @@ document.addEventListener("DOMContentLoaded", () => {
     inputBox.focus();
   } else {
     const loginBox = document.querySelector(".login-box");
+    const signUpBox = document.querySelector(".signup-box");
+
     loginBox.style.display = "block";
+
+    //login page button that takes you to signup page
     const goToSignUpButton = document.querySelector(".goto-sign-up");
     goToSignUpButton.addEventListener("click", () => {
       loginBox.style.display = "none";
-      const signUpBox = document.querySelector(".signup-box");
       signUpBox.style.display = "block";
     });
-
+    
+    //signup page button that thakes you to login page
+    const goToLoginButton = document.querySelector(".goto-login");
+    goToLoginButton.addEventListener("click", () => {
+      signUpBox.display = "none";
+      loginBox.style.display = "block";
+    });
   }
 
-  // login
+  // login function
   const submitButton = document.querySelector(".login-submit-button");
   submitButton.addEventListener("click", async () => {
     const email = document.querySelector(".login-email-input").value;
@@ -228,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
-  // signup
+  // signup function
   const signUp = document.querySelector(".signup-submit-button");
   signUp.addEventListener("click", async () => {
     const email = document.querySelector(".signup-email-input").value;
@@ -275,7 +289,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
-  // logout
+  // logout function
   const logoutButton = document.querySelector(".todo-logout-button");
   logoutButton.addEventListener("click", () => {
     localStorage.removeItem("token");
@@ -286,14 +300,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//popup
+//popup for server delay alert message
 document.addEventListener("DOMContentLoaded", function () {
   const popup = document.getElementById("popup");
-
-  // Show the popup
   popup.style.display = "block";
-
-  // Hide the popup after 7 seconds (7000 milliseconds)
   setTimeout(function () {
     popup.style.display = "none";
   }, 7000);

@@ -21,7 +21,7 @@ body {
   background-color: white;
   background-color: #f8f9fa;
   font-family: "Segoe UI", "Avenir Next", "Hiragino Sans GB", "PingFang SC",
-  "Helvetica Neue", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+    "Helvetica Neue", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 }
 
 /* popup  */
@@ -119,20 +119,9 @@ a {
   margin-top: 14vh;
   gap: 2rem;
 }
-.container i{
-  color: rgba(0, 0, 0, .85);
-}
 .container svg {
   width: 70px;
   height: 70px;
-}
-
-.header{
-  justify-content: center;
-  align-items: center;
-  padding-left: 90px;
-  color: #000000;
-  font-weight: bolder;
 }
 
 .signup-box,
@@ -144,9 +133,14 @@ a {
   position: relative;
   height: 62vh;
   width: 22vw;
-  padding: 30px;
-  padding-top: 100px;
-  border-radius: 10px;
+  padding-top: 2rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+}
+ i {
+  color: rgb(202, 198, 198);
+  width: 24px;
+  height: 24px;
 }
 
 .todo-box {
@@ -155,67 +149,61 @@ a {
   align-items: center;
 }
 
-.login-email-box,
-.login-password-box,
-.signup-name-box,
-.signup-email-box,
-.signup-confirm-password-box,
-.signup-password-box {
+.input-box {
   display: flex;
   align-items: center;
   margin-left: 2.2rem;
+  margin-right: 2.2rem;
   margin-bottom: 2rem;
   position: relative;
   top: 20px;
-  border-bottom: 0.5px solid #6b6b6e;
+  width: 85%;
+  border-bottom: 0.5px solid rgb(202, 198, 198);
 }
-
-
-.login__icon {
-  color: #000000;
-}
-
-.signup-name-input,
-.login-email-input,
-.login-password-input,
-.signup-email-input,
-.signup-password-input,
-.signup-confirm-password-input {
+input {
   border: none;
   outline: none;
-  background: none;
-  padding: 10px;
-  padding-left: 24px;
-  font-weight: 700;
-  width: 75%;
-  transition: 0.2s;
+  font-size: 17px;
+  padding-bottom: 4px;
+  padding-left: 7px;
 }
 
-.login-email-label,
-.login-password-label,
-.signup-name-label,
-.signup-email-label,
-.signup-password-label,
-.signup-confirm-password-label {
-  size: 110px;
-  letter-spacing: 4px;
-  color: #3f3d3df5;
-  align-items: center;
-  top: 40px;
-  left: 50px;
-  transition: 0.5s;
-  font-size: 16px;
+.input-box {
+  display: inline-block;
+  position: relative;
+}
+
+.input-box::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 0.9px;
+  width: 0px;
+  background: transparent;
+  transition: width 1s ease, background-color 1s ease;
+}
+.input-box:focus-within::after {
+  width: 100%;
+  background: rgb(48, 111, 230);
+}
+
+.input-box:focus-within i {
+  color: rgb(48, 111, 230);
 }
 
 .incorrect-password-error {
   padding: 20px;
 }
 
-.login-submit-box,.signup-submit-box {
+.login-submit-box,
+.signup-submit-box {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  padding-left: 30px;
-  gap: 2rem;
+  gap: 1rem;
+  margin-left: 2.1rem;
+  margin-right: 0.9rem;
+  margin-top: 1rem;
 }
 
 .btn {
@@ -223,7 +211,6 @@ a {
   border-radius: 2px;
   border-style: solid;
   border-width: 0;
-  min-width: 100px;
   cursor: pointer;
   font-weight: 400;
   line-height: 1;
