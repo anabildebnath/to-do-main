@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>TO DO</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-
-    <script src="./main.js" type="text/javascript"></script>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/auth.css" />
+    <script src="./main.js" type="text/javascript"></script>
+    <script type="module" src="auth.js"></script>
   </head>
   <body>
+    <!-- popup server delay message -->
     <div id="popup" class="popup">
       Server deployed on Render.com might take some time to accept request and
       return response.
@@ -39,31 +43,36 @@
                   ></path>
                 </g>
               </svg>
-
               <h1>TO DO</h1>
             </a>
           </li>
         </ul>
       </div>
-
       <div class="navChild">
         <ul>
+          <li><a href="/"> Home </a></li>
           <li>
-            <a href="/"> Home </a>
+            <a href="https://github.com/anabildebnath" target="_blank">
+              Github
+            </a>
           </li>
           <li>
-            <a href="https://github.com/anabildebnath"> Github </a>
+            <a href="https://anabildebnath.netlify.app/" target="_blank">
+              About Developer</a
+            >
           </li>
           <li>
-            <a> Features </a>
+            <a href="https://www.linkedin.com/in/anabildebnath/" target="_blank">
+              Contact Developer</a
+            >
           </li>
           <li>
-            <a href="https://anabildebnath.netlify.app/"> About Developer</a>
+            <a
+              href="https://youtu.be/C8F7N1iMDYA?si=wa8nPJ0AbXhymNpb"
+              target="_blank"
+              >Demo Video</a
+            >
           </li>
-          <li>
-            <a>Demo Video</a>
-          </li>
-          <Account />
         </ul>
       </div>
     </nav>
@@ -94,7 +103,6 @@
           <i class="fas fa-user"></i>
           <input name="email" class="login-email-input" placeholder="Email" />
         </div>
-
         <div class="input-box">
           <i class="fas fa-lock"></i>
           <input
@@ -105,17 +113,16 @@
           />
         </div>
         <div class="incorrect-password-error">Incorrect email or password</div>
-
         <div class="login-submit-box">
           <button class="btn login-submit-button">Login</button>
           <button class="btn goto-sign-up">Sign up?</button>
+          <!-- <button id="google-login">Login with Google</button> -->
         </div>
       </div>
 
       <!-- signup  -->
       <div class="signup-box" style="display: none">
         <div class="input-box">
-     
           <i class="fas fa-id-card"></i>
           <input class="input signup-name-input" placeholder="Name" />
         </div>
@@ -125,11 +132,19 @@
         </div>
         <div class="input-box">
           <i class="fas fa-lock"></i>
-          <input class="signup-password-input" type="password" placeholder="Password" />
+          <input
+            class="signup-password-input"
+            type="password"
+            placeholder="Password"
+          />
         </div>
         <div class="input-box">
           <i class="fas fa-lock"></i>
-          <input class="signup-confirm-password-input" type="password" placeholder="Confirm Password" />
+          <input
+            class="signup-confirm-password-input"
+            type="password"
+            placeholder="Confirm Password"
+          />
         </div>
         <div class="signup-submit-box">
           <button class="btn signup-submit-button">Signup</button>
@@ -141,7 +156,7 @@
       <div class="todo-box" style="display: none">
         <div class="todo-header">
           <div class="todo-name-box">Todo List</div>
-          <button class="todo-logout-button">Logout</button>
+          <button class="todo-logout-button" id="logout">Logout</button>
         </div>
         <ul class="todo-list"></ul>
         <div class="todo-footer">

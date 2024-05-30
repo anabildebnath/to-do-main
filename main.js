@@ -195,29 +195,32 @@ document.addEventListener("DOMContentLoaded", () => {
       loginBox.style.display = "none";
       signUpBox.style.display = "block";
     });
-    
+
     //signup page button that thakes you to login page
     const goToLoginButton = document.querySelector(".goto-login");
     goToLoginButton.addEventListener("click", () => {
-      signUpBox.display = "none";
+      signUpBox.style.display = "none";
       loginBox.style.display = "block";
     });
   }
 
   // login function
-  const submitButton = document.querySelector(".login-submit-button");
+  const submitButton = document.querySelector(".login-submit-button"); //this is the login submitButton
   submitButton.addEventListener("click", async () => {
-    const email = document.querySelector(".login-email-input").value;
+    //listening to the click on submitButton
+    const email = document.querySelector(".login-email-input").value; // taking the email value entered
     if (email === "") {
-      const errorText = document.querySelector(".incorrect-password-error");
-      errorText.style.display = "block";
-      return;
+      // if the email is nothing which is ""
+      const errorText = document.querySelector(".incorrect-password-error"); // takes the error message part
+      errorText.style.display = "block"; // and and changes the style from none to block so now the error message is visible
+      return; //simply returns
     }
     const inputValues = {
+      //taking email and password from user input
       email,
       password: document.querySelector(".login-password-input").value,
     };
-    console.log('"~~~ hello', inputValues);
+    console.log('"~~~ hello', inputValues); //prints the input values on the console
     fetch(`${baseUrl}/users/login`, {
       method: "POST",
       headers: {
@@ -234,11 +237,11 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("id", data.user.id);
         window.location.reload();
       })
-      .catch((error) => {
-        const errorText = document.querySelector(".incorrect-password-error");
-        errorText.style.display = "block";
-        localStorage.clear();
-        console.error("Error:", error);
+      .catch((error) => {//if any error caught 
+        const errorText = document.querySelector(".incorrect-password-error");//taking the error message part
+        errorText.style.display = "block";//changing the display style to block from none
+        localStorage.clear();//clearing the local storage where form data was stored
+        console.error("Error:", error);//printing the error message on console 
       });
   });
 
